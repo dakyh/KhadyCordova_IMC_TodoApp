@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/themes/costume-themeroller.min.css" />
+    <link rel="stylesheet" href="lib/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="lib/themes/dykhatheme.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <h1>Ma Liste de Tâches </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <form id="taskForm">
+            <label for="task">Ajouter une tâche</label>
+            <input type="text" id="task" placeholder="Nouvelle tâche">
+            <input type="button" value="Ajouter" onclick="ajouterTache()">
+            <input type="button" value="Réinitialiser" onclick="reinitialiser()">
+        </form>
+        <div data-role="header" data-theme="b">
+            <h1>Tâches en cours</h1>
+            <ul id="taskList" data-role="listview" data-inset="true">
+            </ul>
+            <br>
+        </div>
+        <br>
+        <div data-role="header" data-theme="b">
+            <h1>Tâches terminées</h1>
+            <ul id="taskListDone" data-role="listview" data-inset="true">
+            </ul>
+            <br>
+        </div>
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h1>Khady Diagne M2GLSI © 2023-2024</h1>
+    </div>
+</div>
+
+
+</body>
+</html>
